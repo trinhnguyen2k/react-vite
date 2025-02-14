@@ -1,10 +1,18 @@
 // component = html + css +
 import './style.css';
+
+const printObject = {
+    name: "tristian",
+    age: 25
+}
 const MyComponent = () => {
     return (
       <>
-            <div> Thuc hanh component - tris </div>
-            <div className='child'>child</div>
+            <div> {JSON.stringify(printObject)} + Thuc hanh component - tris </div>
+            <div> {console.log("In Ra Console Log")} </div>
+            <div className='child'
+                style= {{backgroundColor: "bisque"}}
+            >child</div>
       </>
   )
 }

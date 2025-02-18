@@ -1,0 +1,79 @@
+body {
+  background-color: rgb(226, 240, 252);
+}
+.todo-title {
+  font-size: 20px;
+  color: rgb(142, 106, 59);
+  justify-self: flex-start;
+  font-weight: bolder;
+}
+button {
+  color: rgb(248, 248, 254);
+  background-color: rgb(15, 79, 218);
+  border-radius: 4px;
+  border: 1px solid gray;
+  margin-left: 5px;
+  width: 4rem;
+}
+button:hover {
+  background-color: rgb(169, 169, 162);
+}
+.todo-container {
+  margin: 20px auto;
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input-text input,
+button {
+  height: 25px;
+  box-sizing: content-box;
+  border: 0.2px solid rgb(123, 123, 123);
+  border-radius: 5px;
+}
+
+.input-text input {
+  width: 20vw;
+}
+.todo-data {
+  border: 1px solid rgb(77, 74, 74);
+  color: rgb(51, 38, 8);
+  background-color: rgb(243, 228, 209);
+  margin: 10px;
+  height: 50px;
+  width: 70%;
+  box-sizing: content-box;
+  /* text-align: center; */
+  padding: 10px;
+}
+.logo {
+  height: 4em;
+  padding: 1em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .todo-image .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

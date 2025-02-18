@@ -42,9 +42,9 @@ button {
 .todo-data {
   border: 1px solid rgb(77, 74, 74);
   color: rgb(51, 38, 8);
-  background-color: rgb(243, 228, 209);
+  /* background-color: rgb(243, 228, 209); */
   margin: 10px;
-  height: 50px;
+  height: 50vh;
   width: 70%;
   box-sizing: content-box;
   /* text-align: center; */

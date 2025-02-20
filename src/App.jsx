@@ -2,7 +2,13 @@ import Input from './component/learn/todo/Input';
 import './component/learn/todo/todo.css';
 import TodoData from './component/learn/todo/TodoData';
 import reactLogo from './assets/react.svg';
+import { useState } from 'react';
 const App = () => {
+  const [todoList, setTodo] = useState([
+    { id: 1, name: "Learning react" },
+    { id: 2, name: "Learning Java" },
+  ]);
+
 
   const name = "Tristian";
   const age = 25;
@@ -12,23 +18,18 @@ const App = () => {
   };
 
 
-  const handleClick = () => {
-    alert("hi, click me")
-  }
-  const handleOnChange = (text) => {
-    console.log(">>> check on change: ", text)
-  }
+
+
   return (
     <div className="todo-container">
       <div className="todo-title">Todo List</div>
       <Input
-        handleClick={handleClick}
-        handleOnChange={handleOnChange}
       />
       <TodoData
         name={name}
         age={age}
         address={address}
+        todoList={todoList}
       />
       <div className="todo-image">
         <img className='logo' src={reactLogo} />

@@ -11,15 +11,19 @@ const App = () => {
     addressNumber: 86
   };
 
-  const callName = (name) => {
-    return alert(`Call me: ${name}`)
-  }
 
+  const handleClick = () => {
+    alert("hi, click me")
+  }
+  const handleOnChange = (text) => {
+    console.log(">>> check on change: ", text)
+  }
   return (
     <div className="todo-container">
       <div className="todo-title">Todo List</div>
       <Input
-        callName={callName}
+        handleClick={handleClick}
+        handleOnChange={handleOnChange}
       />
       <TodoData
         name={name}

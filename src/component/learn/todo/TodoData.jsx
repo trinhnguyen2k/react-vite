@@ -1,6 +1,6 @@
 
 let TodoData = (props) => {
-     const { name, address, province } = props
+     const { name } = props
      return (
 
           <>

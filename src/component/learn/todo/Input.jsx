@@ -14,6 +14,8 @@ let Input = (props) => {
 
     const handleClick = (text) => {
         addNewTodo(text);
+        setValueInput("");
+
     }
     return (
         <>
@@ -21,6 +23,7 @@ let Input = (props) => {
                 <input
                     type="text" placeholder='Enter your text'
                     onChange={(event) => handleOnChange(event.target.value)}
+                    value={valueInput}
                 />
                 <button
                     style={{ cursor: "pointer" }}

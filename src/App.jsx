@@ -17,13 +17,26 @@ const App = () => {
     addressNumber: 86
   };
 
+  const addNewTodo = (todo) => {
+    const newTodo = {
+      id: randomIntfromInterval(1, 100000),
+      name: todo
+    }
+    setTodo([...todoList, newTodo])
+  }
 
+
+  const randomIntfromInterval = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
 
 
   return (
     <div className="todo-container">
       <div className="todo-title">Todo List</div>
       <Input
+        addNewTodo={addNewTodo}
+
       />
       <TodoData
         name={name}

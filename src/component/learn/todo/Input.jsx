@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 let Input = (props) => {
-    // const { handleClick } = props;
+    const { addNewTodo } = props;
+
     // useState hook + react, [variable A, setter/getter -> cap nhat variable A]
     // setValueInput -> la 1  function de cap nhat du lieu cua bien valueInput
     // erict la gia tri mac dinh
@@ -12,8 +13,7 @@ let Input = (props) => {
     }
 
     const handleClick = (text) => {
-        console.log("check value input: ", text);
-        alert(text)
+        addNewTodo(text);
     }
     return (
         <>

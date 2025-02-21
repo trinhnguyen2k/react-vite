@@ -1,7 +1,6 @@
 
 let TodoData = (props) => {
      const { todoList } = props
-     console.log("check props todo", todoList)
 
      return (
           <>
@@ -16,9 +15,6 @@ let TodoData = (props) => {
                               </div>
                          )
                     })}
-                    <div>
-                         {JSON.stringify(todoList)}
-                    </div>
                </div>
           </>
      )

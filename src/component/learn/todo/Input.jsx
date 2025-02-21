@@ -7,7 +7,7 @@ let Input = (props) => {
     // setValueInput -> la 1  function de cap nhat du lieu cua bien valueInput
     // erict la gia tri mac dinh
 
-    const [valueInput, setValueInput] = useState("eric");
+    const [valueInput, setValueInput] = useState("");
     const handleOnChange = (text) => {
         setValueInput(text);
     }
@@ -29,9 +29,6 @@ let Input = (props) => {
                     style={{ cursor: "pointer" }}
                     onClick={() => handleClick(valueInput)}
                 >Add</button>
-                <div>
-                    <p>My text input is {valueInput}</p>
-                </div>
             </div>
         </>
     )

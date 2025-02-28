@@ -8,7 +8,7 @@ import {
 import LoginPage from './pages/login.jsx';
 import RegristerPage from './pages/regrister.jsx';
 import UserPage from './pages/user.jsx';
-import ProductPage from './pages/product.jsx';
+import BooksPage from './pages/book.jsx';
 import './styles/global.css';
 import TodoApp from './component/learn/todo/TodoApp.jsx';
 import ErrorPage from './pages/error.jsx';
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
-    // Nested route, page user & product thua huong UI tu component parent APP.
+    // Nested route, page user & Books thua huong UI tu component parent APP.
     children: [
       {
         index: true,
@@ -30,8 +30,8 @@ const router = createBrowserRouter([
         element: <UserPage />
       },
       {
-        path: "/product",
-        element: <ProductPage />
+        path: "/Books",
+        element: <BooksPage />
       },
     ]
   },

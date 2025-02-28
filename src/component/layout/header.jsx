@@ -1,10 +1,12 @@
 import './header.css';
+import { Link } from 'react-router-dom'
+// Use Link để làm single page application - click vào router khác không bị reload lại trang
 const Header = () => {
     return (
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/users">Users</a></li>
-            <li><a href="/product">Product</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/users">Users</Link></li>
+            <li><Link to="/product">Product</Link></li>
         </ul >
     )
 }

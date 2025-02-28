@@ -50,7 +50,7 @@ const App = () => {
 
         }
       </div>
-      // Outlet = nested router với Outlet
+      {/* // Outlet = nested router với Outlet */}
       <Outlet />
       <Footer />
     </>

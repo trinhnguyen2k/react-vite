@@ -1,7 +1,7 @@
 import './header.css';
 import { NavLink, Link } from 'react-router-dom'
 // Use Link để làm single page application - click vào router khác không bị reload lại trang
-// NavLink : navigation link , auto thêm 1 class = Active ,
+// NavLink : navigation link , auto thêm 1 class = Active vào css ,
 const Header = () => {
     return (
         <ul>

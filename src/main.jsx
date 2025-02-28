@@ -10,6 +10,7 @@ import RegristerPage from './pages/regrister.jsx';
 import UserPage from './pages/user.jsx';
 import ProductPage from './pages/product.jsx';
 import './styles/global.css';
+import TodoApp from './component/learn/todo/TodoApp.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
     element: <App />,
     // Nested route, page user & product thua huong UI tu component parent APP.
     children: [
+      {
+        index: true,
+        element: <TodoApp />,
+      },
       {
         path: "/users",
         element: <UserPage />

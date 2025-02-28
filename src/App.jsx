@@ -5,6 +5,7 @@ import reactLogo from './assets/react.svg';
 import { useState } from 'react';
 import Header from './component/layout/header';
 import Footer from './component/layout/footer';
+import { Outlet } from 'react-router-dom';
 const App = () => {
   const [todoList, setTodo] = useState([]);
 
@@ -49,6 +50,8 @@ const App = () => {
 
         }
       </div>
+      // Outlet = nested router với Outlet
+      <Outlet />
       <Footer />
     </>
 

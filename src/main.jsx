@@ -14,7 +14,18 @@ import './styles/global.css';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <App />,
+    // Nested route, page user & product thua huong UI tu component parent APP.
+    children: [
+      {
+        path: "/users",
+        element: <UserPage />
+      },
+      {
+        path: "/product",
+        element: <ProductPage />
+      },
+    ]
   },
   {
     path: "/login",
@@ -23,15 +34,7 @@ const router = createBrowserRouter([
   {
     path: "/regrister",
     element: <RegristerPage />
-  }, ,
-  {
-    path: "/users",
-    element: <UserPage />
-  }, ,
-  {
-    path: "/product",
-    element: <ProductPage />
-  },
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

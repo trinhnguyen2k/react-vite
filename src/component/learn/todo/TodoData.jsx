@@ -10,7 +10,7 @@ let TodoData = (props) => {
                          return (
                               <div className="todo-item" key={item.id}>
                                    <div>
-                                        {item.name} {item.id}
+                                        {item.name}
 
 
                                    </div>

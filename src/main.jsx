@@ -11,11 +11,14 @@ import UserPage from './pages/user.jsx';
 import ProductPage from './pages/product.jsx';
 import './styles/global.css';
 import TodoApp from './component/learn/todo/TodoApp.jsx';
+import ErrorPage from './pages/error.jsx';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     // Nested route, page user & product thua huong UI tu component parent APP.
     children: [
       {
@@ -39,7 +42,7 @@ const router = createBrowserRouter([
   {
     path: "/regrister",
     element: <RegristerPage />
-  }
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

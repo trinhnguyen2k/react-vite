@@ -1,7 +1,7 @@
 import Input from './Input';
 import './todo.css';
 import TodoData from './TodoData';
-import reactLogo from '../../../assets/react.svg';
+import reactLogo from '../../assets/react.svg';
 import { useState } from 'react';
 
 const TodoApp = () => {

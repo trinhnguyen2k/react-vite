@@ -10,7 +10,7 @@ import RegristerPage from './pages/regrister.jsx';
 import UserPage from './pages/user.jsx';
 import BooksPage from './pages/book.jsx';
 import './styles/global.css';
-import TodoApp from './component/learn/todo/TodoApp.jsx';
+import TodoApp from './component/todo/TodoApp.jsx';
 import ErrorPage from './pages/error.jsx';
 
 

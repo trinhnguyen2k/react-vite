@@ -1,14 +1,24 @@
 import '../../styles/user.css';
 import { Button, Input } from 'antd';
 import { useState } from 'react';
+import axios from 'axios';
+
 const UserForm = () => {
+
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
-    const [passWord, setpassWord] = useState('');
-    const [phoneNumber, setphoneNumber] = useState('');
+    const [password, setpassWord] = useState('');
+    const [phonenumber, setPhoneNumber] = useState('');
 
     const handleClickBtn = () => {
-        console.log('Check value: ', { fullName, email, passWord, phoneNumber });
+        const URL_BACKEND = 'http://localhost:8080/api/v1/user';
+        const data = {
+            fullName: fullName,
+            email: email,
+            password: password,
+            phone: phonenumber
+        }
+        axios.post(URL_BACKEND, data);
     }
     return (
         <div>
@@ -25,13 +35,13 @@ const UserForm = () => {
                 />
                 <label>Password</label>
                 <Input.Password placeholder="Input password"
-                    value={passWord}
+                    value={password}
                     onChange={((event) => { setpassWord(event.target.value) })}
                 />
                 <label>Phone Number</label>
                 <Input
-                    value={phoneNumber}
-                    onChange={((event) => { setphoneNumber(event.target.value) })}
+                    value={phonenumber}
+                    onChange={((event) => { setPhoneNumber(event.target.value) })}
                 />
                 <div>
 
